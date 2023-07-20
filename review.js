@@ -153,7 +153,7 @@ console.log(selfRejection = acceptance.trim());
 
 // I just want my dreams to come true. 
 // With the powers of logical and comparison operators, PRINT TRUE please!
-// console.log(xxxxx);
+console.log((true)? true : false); // I'm realizing this probably wasn't a task but the deed is done, so here you go!
 
 // Replace the underscores.
 
@@ -163,12 +163,19 @@ const c = 15;
 const d = "Keke"
 
 // console.log(a _ b)
+console.log(a < b)
 // console.log(c _ b)
+console.log(c > b)
 // console.log(d _ d)
+console.log(d === d)
 // console.log(d _ a)
+console.log(d !== a)
 // console.log(a _ 15)
+console.log(a < 15)
 // console.log(a _ b _ c)
+console.log(a < b < c)
 // console.log(c _ b _ a _ d)
+console.log(c > b > a !== d)
 
 // =================================================
 //                     LOOPS
