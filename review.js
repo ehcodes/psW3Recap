@@ -64,68 +64,73 @@ console.log('Teddy'.charCodeAt(2));
 console.log(String.fromCharCode(66, 111, 114, 105, 107, 233, 110));
 
 // Take your first and last name and concat()
-// console.log(xxxxx);
+console.log('Engrid'.concat(" ","Hernandez"));
 
 // Create a string and make it return true using startsWith()
-// console.log(xxxxx);
+console.log('howdy'.startsWith('h'));
 
 // Now use any variable with endsWith() and return false
-// console.log(xxxxx);
+console.log('howdy'.startsWith('h'));
 
 // Finish the following sentence. Use includes() and return true.
-const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
-// console.log(xxxxx);
+const ozgur = 'Once upon a time Ozgur looked up at the Moon, got bored, and went to bed.';
+console.log(ozgur.includes('bed'));
 
 // Help! I'm looking for my cow! Using indexOf() help Josh find his cow. What's the index of cow?
 const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
-// console.log(xxxxx);
+console.log(joshHadALittleLambOopsCow.indexOf('cow'));
 
 // Oh no! The alien doppelgangers are here. Let's use our laserbeam lastIndexOf() to shoot down the last alien named Vanessa in the String Universe.
 const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace."
-// console.log(xxxxx);
+console.log(vanessa.lastIndexOf('Vanessa'));
 
 // Can we use length for strings? I don't know, you tell me.
 const noWeCantTeo = "but did you try it out though?"
-// console.log(xxxxx);
+console.log(noWeCantTeo.length);
 
 // If only it was this easy to replace() my ex. Totally not joking, LOL. JK
 const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!"
-// console.log(xxxxx);
+console.log(replaceGokuWithVegeta.replace('Goku','Vegeta'));
 
 // Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'. 
 const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4"
-// console.log(xxxxx);
+console.log(joshIsLookingForWifey.search('wifey'));
 
 // I guess we can share this pizza sentence. Use slice() to return the other half of pizza.
+/* .slice() is incluive of the starting index*/
 const pizzaSentence = "pizza, other half of pizza"
-// console.log(xxxxx);
+console.log(pizzaSentence.slice(7));
 
 // Now using the pizza sentence, return only pizza (before the comma)
-// console.log(xxxxx);
+/* .slice() is incluive of the ending index*/
+console.log(pizzaSentence.slice(0,5));
 
-// Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill. Return an array separating Yaz, Poornima, and Leshawn.
+// Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill.
+// Return an array separating Yaz, Poornima, and Leshawn.
 const splitTheBill = "Yaz, Poornima, and Leshawn"
-// console.log(xxxxx);
+console.log(splitTheBill.split(', '));
 
-// OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces. Using splitTheBill, return an array separating all three by characters.
-// console.log(xxxxx);
+// OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces.
+// Using splitTheBill, return an array separating all three by characters.
+console.log(slicedAndDiced = [...splitTheBill]);
 
 // Use this toLowerCase()
 const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS."
 // Tuan was angry today. Create a string with words that Tuan would yell out. Now lowercase it, to tell Tuan to chill out. 
-// console.log(xxxxx);
+console.log(tuansAngry = angry.toLocaleLowerCase());
 
 // toUpperCase()
 const jahlunSaidToPutSomeRespectToHisName = "jahlun"
-// console.log(xxxxx);
+console.log(thatsNotTheSaying = jahlunSaidToPutSomeRespectToHisName.toUpperCase());
 
 // substring()
 // on the chopping block...
-// console.log(xxxxx);
+/* .substring() is NOT incluive of the starting index*/
+/* .substring() is NOT incluive of the ending index*/
 
 // Returns "ell"
 const basicGreeting = "Hello World"
-// console.log(xxxxx);
+console.log(basicGreeting.substring(1,3));
 
 // Returns "JavaScript"
 const ohReally = "JavaScript Substring"
@@ -138,7 +143,9 @@ const aslDays = "xXteoWuzHereXx@aol.com"
 // trim()
 // If only I can use this for my love handles...
 // Create a variable with a string value with some extra loving on both sides.
-// console.log(xxxxx);
+let acceptance = '      loving yourself as you are      '
+console.log(acceptance)
+console.log(selfRejection = acceptance.trim());
 
 // =================================================
 //                     BOOLEAN
