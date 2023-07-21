@@ -425,7 +425,10 @@ console.log(Gustavo.coolLevel==='the coolest' ? 'You got that right!' : `James w
 // Don't forget to call your functions :)
 
 // Create a function called sayGreeting and PRINT 'Hello, ma'amsir!'
-// console.log(xxxxx);
+function sayGreeting(){
+  console.log(`Hello, ma'amsir!`);
+}
+sayGreeting();
 
 // Create a function that takes a string as a parameter. PRINT 'This is my (STRING)'. Please replace the (STRING) with the parameter. Don't play with me haha.
 // console.log(xxxxx);
