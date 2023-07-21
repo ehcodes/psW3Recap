@@ -381,13 +381,42 @@ console.log(donutShop[2][0][0][1][0]);
 // =================================================
 
 // Teo is a person. I would hope so...
-// Check if Teo is a person. If true, print 'Teo is a person!' if not then print 'Teo is not a person!'
-// If Teo is a person, check to see if he is a male or a female. If male, print 'You got it right!' if not then print 'Wrong. Teo is going to remove you from the class.'.
-// If male, check to see if Teo is hungry. If Teo is 'hungry' then print 'Let's buy Teo some tacos!'. If Teo is 'not hungry' then print 'He doesn't need to eat.'. Anything else, print 'If Teo is not hungry, am I hungry?'
-// console.log(xxxxx);
-
+const Teo = {
+  isPerson:true,
+  gender:'male',
+  apetite:'hungry'
+};
+// Check if Teo is a person. 
+if(Teo.isPerson){
+// If true, print 'Teo is a person!' 
+  console.log('Teo is a person!' )
+// If not then print 'Teo is not a person!'
+}else{
+  console.log('Teo is not a person!')
+}
+// If male, print 'You got it right!'
+if(Teo.gender==='male'){
+  console.log('You got it right!');
+// If male, check to see if Teo is hungry. If Teo is 'hungry' then print 'Let's buy Teo some tacos!'.
+  if(Teo.apetite==='hungry'){
+    console.log(`Let's buy Teo some tacos!`)
+  // If Teo is 'not hungry' then print 'He doesn't need to eat.'.
+  }else if(Teo.apetite==='notHungry'){
+    console.log(`He doesn't need to eat.`);
+  // Anything else, print 'If Teo is not hungry, am I hungry?'
+  }else{
+    console.log('If Teo is not hungry, am I hungry?')
+  }
+// If not then print 'Wrong. Teo is going to remove you from the class.'.
+}else{
+  console.log('Wrong. Teo is going to remove you from the class.');
+}
 // Create a if/else ternary to check if Gustavo is the coolest. If coolest, print 'You got that right!', else print 'James wants to argue. He says he's the best!'
-// console.log(xxxxx);
+const Gustavo = {
+  coolLevel:'decent'
+};
+
+console.log(Gustavo.coolLevel==='the coolest' ? 'You got that right!' : `James wants to argue. He says he's the best!`);
 
 // =================================================
 //                     FUNCTIONS
