@@ -32,7 +32,7 @@ aVariable = Number(aVariable);
 console.log(aVariable);
 
 // 4.) Create another variable and the one from above to concatenate
-let bVariable = '023'
+let bVariable = '023';
 console.log(aVariable+bVariable);
 
 // 5.) Use any of the variables above or create new ones and print using string interpolation
@@ -77,28 +77,28 @@ const ozgur = 'Once upon a time Ozgur looked up at the Moon, got bored, and went
 console.log(ozgur.includes('bed'));
 
 // Help! I'm looking for my cow! Using indexOf() help Josh find his cow. What's the index of cow?
-const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
+const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone.";
 console.log(joshHadALittleLambOopsCow.indexOf('cow'));
 
 // Oh no! The alien doppelgangers are here. Let's use our laserbeam lastIndexOf() to shoot down the last alien named Vanessa in the String Universe.
-const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace."
+const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace.";
 console.log(vanessa.lastIndexOf('Vanessa'));
 
 // Can we use length for strings? I don't know, you tell me.
-const noWeCantTeo = "but did you try it out though?"
+const noWeCantTeo = "but did you try it out though?";
 console.log(noWeCantTeo.length);
 
 // If only it was this easy to replace() my ex. Totally not joking, LOL. JK
-const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!"
+const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!";
 console.log(replaceGokuWithVegeta.replace('Goku','Vegeta'));
 
 // Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'. 
-const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4"
+const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4";
 console.log(joshIsLookingForWifey.search('wifey'));
 
 // I guess we can share this pizza sentence. Use slice() to return the other half of pizza.
 /* .slice() is incluive of the starting index*/
-const pizzaSentence = "pizza, other half of pizza"
+const pizzaSentence = "pizza, other half of pizza";
 console.log(pizzaSentence.slice(7));
 
 // Now using the pizza sentence, return only pizza (before the comma)
@@ -107,7 +107,7 @@ console.log(pizzaSentence.slice(0,5));
 
 // Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill.
 // Return an array separating Yaz, Poornima, and Leshawn.
-const splitTheBill = "Yaz, Poornima, and Leshawn"
+const splitTheBill = "Yaz, Poornima, and Leshawn";
 console.log(splitTheBill.split(', '));
 
 // OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces.
@@ -115,12 +115,12 @@ console.log(splitTheBill.split(', '));
 console.log(slicedAndDiced = [...splitTheBill]);
 
 // Use this toLowerCase()
-const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS."
+const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS.";
 // Tuan was angry today. Create a string with words that Tuan would yell out. Now lowercase it, to tell Tuan to chill out. 
 console.log(tuansAngry = angry.toLocaleLowerCase());
 
 // toUpperCase()
-const jahlunSaidToPutSomeRespectToHisName = "jahlun"
+const jahlunSaidToPutSomeRespectToHisName = "jahlun";
 console.log(thatsNotTheSaying = jahlunSaidToPutSomeRespectToHisName.toUpperCase());
 
 // substring()
@@ -129,22 +129,22 @@ console.log(thatsNotTheSaying = jahlunSaidToPutSomeRespectToHisName.toUpperCase(
 /* .substring() is NOT incluive of the ending index*/
 
 // Returns "ell"
-const basicGreeting = "Hello World"
+const basicGreeting = "Hello World";
 console.log(basicGreeting.substring(1,3));
 
 // Returns "JavaScript"
-const ohReally = "JavaScript Substring"
+const ohReally = "JavaScript Substring";
 // console.log(xxxxx);
 
 // Returns aol.com
-const aslDays = "xXteoWuzHereXx@aol.com"
+const aslDays = "xXteoWuzHereXx@aol.com";
 // console.log(xxxxx);
 
 // trim()
 // If only I can use this for my love handles...
 // Create a variable with a string value with some extra loving on both sides.
-let acceptance = '      loving yourself as you are      '
-console.log(acceptance)
+let acceptance = '      loving yourself as you are      ';
+console.log(acceptance);
 console.log(selfRejection = acceptance.trim());
 
 // =================================================
@@ -159,22 +159,22 @@ console.log((true)? true : false); // I'm realizing this probably wasn't a task 
 const a = 5;
 const b = 10;
 const c = 15;
-const d = "Keke"
+const d = "Keke";
 
 // console.log(a _ b)
-console.log(a < b)
+console.log(a < b);
 // console.log(c _ b)
-console.log(c > b)
+console.log(c > b);
 // console.log(d _ d)
-console.log(d === d)
+console.log(d === d);
 // console.log(d _ a)
-console.log(d !== a)
+console.log(d !== a);
 // console.log(a _ 15)
-console.log(a < 15)
+console.log(a < 15);
 // console.log(a _ b _ c)
-console.log(a < b < c)
+console.log(a < b < c);
 // console.log(c _ b _ a _ d)
-console.log(c > b > a !== d)
+console.log(c > b > a !== d);
 
 // =================================================
 //                     LOOPS
@@ -215,14 +215,14 @@ for(const thing in whateverQueenBeySaid){
 
 // Using (FOR IN LOOP), print the indexes of the array.
 /* today I learned that for...in loops return the key/index of the object/array it is iterating over */
-const lana = ['l', 'a', 'n', 'a']
+const lana = ['l', 'a', 'n', 'a'];
 
 for(const index in lana){
-  console.log(index)
+  console.log(index);
 }
 
 // USE (FOR OF LOOP)!
-const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
+const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner'];
 
 for(const index of tia){
   console.log(tia.indexOf(index));
@@ -232,77 +232,92 @@ for(const index of tia){
 // Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas.
 // Inside the function, create a variable with the string "PS".
 // Print their name in the console concatenated with the variable. 
-const perscholas = ['Amira', 'Arely', 'Jonathan']
+const perscholas = ['Amira', 'Arely', 'Jonathan'];
 function printPS(arr){
-  const ps='PS'
+  const ps='PS';
   perscholas.forEach((el)=>{
     console.log(`${ps} ${el}`);
   })
 }
-printPS(perscholas)
+printPS(perscholas);
 
 // =================================================
 //                     ARRAYS
 // =================================================
 
 // Look up the following: Make a note of what each one of these methods do
-// push()
-// pop()
-// unshift()
-// shift()
-// concat()
-// splice()
-// slice()
-// sort()
-// includes()
-// indexOf()
-// length
 
-const fruits = ['apple', 'banana', 'orange']
+/* push() -  moves an object to the end of an array*/
+/* pop() -  removes an object from the end of an array */ 
+/* unshift() -  moves an object to the beginning of an array */ 
+/* shift() - removes an object from the beginning of an array */ 
+/* concat() - smooshes multiple arrays and/or objects together; returns new array */ 
+/* splice() - can be used to replace, delete, add or remove elements from an array */ 
+/* slice() - can be used to make a copy of an array and then replace, delete, add or remove elements from the copied array */ 
+/* sort() - reorders the elements of an array, sorting them by converting them to strings and then sorting by their unicode point value */ 
+/* includes() - checks if the provided argument is in the array; returns true or false. */ 
+/* indexOf() - returns the index of the provided argument; returns -1 if provided argument does not exist in array. */ 
+/* length - returns the (length) number of objects in array */ 
+
+const fruits = ['apple', 'banana', 'orange'];
 
 // Print banana
-// console.log(xxxxx);
+console.log(fruits[1]);
 
 // Let's turn it up a notch. I won't tell you what array methods to use. 
-// console.log(xxxxx);
-
 // Join all the elements of the array into a string separated by a space.
-// console.log(xxxxx);
+console.log(fruits.join(' '));
 
 // Remove orange
-// console.log(xxxxx);
+fruits.pop();
+console.log(fruits);
 
 // Add strawberry, kiwi, and grapes at the end
-// console.log(xxxxx);
+fruits.push('strawberry','kiwi','grapes');
+console.log(fruits);
 
 // Remove apple
-// console.log(xxxxx);
+fruits.shift();
+console.log(fruits);
 
 // Add mango at the beginning of the array
-// console.log(xxxxx);
+fruits.unshift('mango');
+console.log(fruits);
 
 // Add lemon, and grapefruit between mango and banana
-// console.log(xxxxx);
+fruits.splice(1,0,'lemon','grapefruit');
+console.log(fruits);
 
 // Remove banana and strawberry
-// console.log(xxxxx);
+fruits.splice(3,2)
+console.log(fruits);;
 
-// Create a new array called exoticFruits. Add 3 exotic fruits inside of this array. Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
-// console.log(xxxxx);
+// Create a new array called exoticFruits. 
+// Add 3 exotic fruits inside of this array.
+// Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
+const exoticFruits = ['zapote','quinepas','percha']
+const spreadFruits = [...exoticFruits,...fruits];
+const concatFruits = fruits.concat(exoticFruits);
+console.log(exoticFruits);
+console.log(spreadFruits);
+console.log(concatFruits);
 
 // Print the last two exotic fruits without altering the newly concatenated array.
-// console.log(xxxxx);
+console.log(concatFruits.slice(concatFruits.length-2,concatFruits.length));
+console.log(concatFruits);
 
 // Monalissa said she needs help re-organizing her items in alphabetical order.
 const monalissaIsMessy = ["pencil", "paper", "notebook", "computer"]
-// console.log(xxxxx);
+console.log(monalissaIsMessy.sort());
 
 // Kevin accidentally stepped into the mirror world and needs help reversing his words.
 const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"]
-// console.log(xxxxx);
+console.log(mirrorMirrorOnTheWall.reverse());
 
 // ===== HIGHER ORDER METHODS =====
-// Rafael said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
+// Rafael said he's trying to stop cursing so much, and he wants to start with his text messages. 
+// Help him write code to eliminate the badword in his sentences. Must return a string sentence.
+// Must use filter(). :) 
 const RafaelNoBadWords = "I am so tired of this badword food. I do not want this badword badword food."
 // console.log(xxxxx);
 
