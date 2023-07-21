@@ -431,48 +431,96 @@ function sayGreeting(){
 sayGreeting();
 
 // Create a function that takes a string as a parameter. PRINT 'This is my (STRING)'. Please replace the (STRING) with the parameter. Don't play with me haha.
-// console.log(xxxxx);
+
+let printString = (string) => {
+  console.log(string);
+}
+printString(`Whoop, Whoop, it's the sound of the police!`);
 
 
-// Create a function called add that takes in three number parameters. Create 3 variables and assign numerical values to them. Invoke your add() and pass in those three variables as arguments.
-// console.log(xxxxx);
+// Create a function called add that takes in three number parameters.
+// Create 3 variables and assign numerical values to them.
+// Invoke your add() and pass in those three variables as arguments.
+const add = (num1,num2,num3)=>{
+  return num1+num2+num3
+}
+let int1 = 1
+let int2 = 3
+let int3 = 50
 
-// Create a function called fightClub() that accepts a name parameter.  If the name:
+console.log(add(int1,int2,int3));
+
+
+// Create a function called fightClub() that accepts a name parameter.
+// If the name:
+const fightClub = (name)=>{
 // 'Teo' RETURN '1st rule: You do not talk about Fight Club.'
-// 'Manara' RETURN '2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB.'
-// 'Liv' RETURN '3rd rule: If someone yells "Stop!", goes limp, taps out, the fight is over.'
-// 'Devin' RETURN '4th rule: Only two guys to a fight.'
-// Anything else, RETURN 'No shirts
-// console.log(xxxxx);
+  if(name=='Teo'){
+    return '1st rule: You do not talk about Fight Club.';
+  // 'Manara' RETURN '2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB.'
+  }else if(name=='Manara'){
+  return '2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB.';
+  // 'Liv' RETURN '3rd rule: If someone yells "Stop!", goes limp, taps out, the fight is over.'
+  }else if(name=='Liv'){
+    return '3rd rule: If someone yells "Stop!", goes limp, taps out, the fight is over.';
+  // 'Devin' RETURN '4th rule: Only two guys to a fight.'
+  }else if(name=='Devin'){
+    return '4th rule: Only two guys to a fight.';
+  // Anything else, RETURN 'No shirts
+  }else{
+    return 'no shirts';
+  }
+}
+console.log(fightClub('something else'));
 
-// Create a function called hello() that prints 'Hello'. Return an anonymous function inside hello() and have it print 'Goodbye'. Invoke your hello function in some way to see Hello and Goodbye in the console.
-// console.log(xxxxx);
+// Create a function called hello() that prints 'Hello'.
+let hello = ()=>{
+  let bye = 'Goodbye'
+  console.log('Hello');
+  return function(){
+  // Return an anonymous function inside hello() and have it print 'Goodbye'.
+    return bye;
+  }
+}
+// Invoke your hello function in some way to see Hello and Goodbye in the console.
+const anonymousFunction = hello();
+console.log(anonymousFunction())
 
 // Create a function expression with your first name as the variable and then print your first and last name
-// console.log(xxxxx);
+const myFirstName = (name)=>{
+  if(name === 'Engrid'){
+    console.log(`${name} Hernandez`);
+  }
+}
 
 // Create an arrow function that accepts a number and have it return that number doubled
-// console.log(xxxxx);
+const doubleNumber = (number) => {
+  return number*2;
+}
+console.log(doubleNumber(17));
 
 // =================================================
 //                     OBJECTS
 // =================================================
 
 // Create an object and call it human. Add a name, age, and location property. Give the properties values.
-// console.log(xxxxx);
-
-
-
+const human = {
+  name:'Beatriz',
+  age:32,
+  location:'Lawrence'
+}
+console.log(human);
 
 // Access the name using dot notation
-// console.log(xxxxx);
+console.log(human.name);
 
 
 // Access the age using square brackets
-// console.log(xxxxx);
+console.log(human['age']);
 
 // Use object destructuring to access location
-// console.log(xxxxx);
+const {location} = human;
+console.log({location});
 
 // ACCESS Granted
 const bulbasaur = {
@@ -490,29 +538,41 @@ const bulbasaur = {
     console.log('Bulbahhhh!!!!!')
   }
 }
-// console.log(xxxxx);
 
 // Print overgrow
-// console.log(xxxxx);
+console.log(bulbasaur.abilities[0]);
 
 // Print cut
-// console.log(xxxxx);
+console.log(bulbasaur.moves[2]);
 
 // Print Bulbahhhh!!!!!
-// console.log(xxxxx);
-
+console.log(bulbasaur.sound());
 
 // Add a height of 7 to bulbasaur using the dot notation. (Don't change bulbasaur object manually)
-// console.log(xxxxx);
+bulbasaur.height = 7;
+console.log(bulbasaur);
 
 // Add a property called order and assign it a value of 1 using the square brackets. (Don't change bulbasaur object manually)
-// console.log(xxxxx);
+bulbasaur['order'] = 1;
+console.log(bulbasaur);
 
 // Print an array that contains every single properties in bulbasaur
-// console.log(xxxxx);
+console.log(Object.entries(bulbasaur));
 
 // Print every single properties one by one in the console
-// console.log(xxxxx);
+for(const key of Object.entries(bulbasaur)){
+  console.log(key[0].toString());
+}
 
 // Print an array that contains every single values in bulbasaur
-// console.log(xxxxx);
+const bulbPropVals = new Array;
+for(const key of Object.entries(bulbasaur)){
+  if(key.length>1){
+    for(const innerKey of key){
+      bulbPropVals.push(innerKey);
+    }
+  }else{
+    bulbPropVals.push(key[1]);
+  }
+}
+console.log(bulbPropVals);
