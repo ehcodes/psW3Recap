@@ -289,13 +289,13 @@ fruits.splice(1,0,'lemon','grapefruit');
 console.log(fruits);
 
 // Remove banana and strawberry
-fruits.splice(3,2)
+fruits.splice(3,2);
 console.log(fruits);;
 
 // Create a new array called exoticFruits. 
 // Add 3 exotic fruits inside of this array.
 // Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
-const exoticFruits = ['zapote','quinepas','percha']
+const exoticFruits = ['zapote','quinepas','percha'];
 const spreadFruits = [...exoticFruits,...fruits];
 const concatFruits = fruits.concat(exoticFruits);
 console.log(exoticFruits);
@@ -307,23 +307,24 @@ console.log(concatFruits.slice(concatFruits.length-2,concatFruits.length));
 console.log(concatFruits);
 
 // Monalissa said she needs help re-organizing her items in alphabetical order.
-const monalissaIsMessy = ["pencil", "paper", "notebook", "computer"]
+const monalissaIsMessy = ["pencil", "paper", "notebook", "computer"];
 console.log(monalissaIsMessy.sort());
 
 // Kevin accidentally stepped into the mirror world and needs help reversing his words.
-const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"]
+const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"];
 console.log(mirrorMirrorOnTheWall.reverse());
 
 // ===== HIGHER ORDER METHODS =====
 // Rafael said he's trying to stop cursing so much, and he wants to start with his text messages. 
 // Help him write code to eliminate the badword in his sentences. Must return a string sentence.
 // Must use filter(). :) 
-const RafaelNoBadWords = "I am so tired of this badword food. I do not want this badword badword food."
-// console.log(xxxxx);
+const rafaelNoBadWords = "I am so tired of this badword food. I do not want this badword badword food.";
+console.log(rafaelNoBadWords.split(" ").filter(word => word != 'badword').join(" "));
 
 // Man math is hard. Let's make our computer do it for us. Use reduce() to find the total of the numbers in numbersToAddUp
-const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
-// console.log(xxxxx);
+const numbersToAddUp = [99, 5677, 232, 84, 2, 231];
+const addedVals = 0;
+console.log(numbersToAddUp.reduce((prevVal,currVal) => prevVal+currVal,addedVals));
 
 // ===== SPREAD OPERATOR ===== 
 
