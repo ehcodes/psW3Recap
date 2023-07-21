@@ -329,16 +329,21 @@ console.log(numbersToAddUp.reduce((prevVal,currVal) => prevVal+currVal,addedVals
 // ===== SPREAD OPERATOR ===== 
 
 // Create a variable and assign a value of a copied array using the spread operator
-// console.log(xxxxx);
+let copiedNumbersToAddUp = [...numbersToAddUp]
+console.log(copiedNumbersToAddUp);
 
-// Create two arrays with any elements and connect both of them using the spread operator. Save the connected arrays into a new variable.
-// console.log(xxxxx);
+// Create two arrays with any elements and connect both of them using the spread operator.
+// Save the connected arrays into a new variable.
+const arr20 = [20,20,20]
+const arr23 = [23,23,23]
+const arr2023 = [...arr20,...arr23]
+console.log(arr2023);
 
 // Using the variable with the newly connected arrays, use spread operator to add something at the end.
-// console.log(xxxxx);
+console.log([...arr2023,'somethin','new']);
 
 // Using the variable with the newly connected arrays, use spread operator to add something at the beginning.
-// console.log(xxxxx);
+console.log(['somethin','new',...arr2023]);
 
 // ===== ACCESS =====
 
