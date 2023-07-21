@@ -156,7 +156,6 @@ console.log(selfRejection = acceptance.trim());
 console.log((true)? true : false); // I'm realizing this probably wasn't a task but the deed is done, so here you go!
 
 // Replace the underscores.
-
 const a = 5;
 const b = 10;
 const c = 15;
@@ -181,17 +180,27 @@ console.log(c > b > a !== d)
 //                     LOOPS
 // =================================================
 
-// Ken has a headache today and he said the room has been spinning like crazy. Make Ken's room spin 10 times using FOR LOOP. Make him print a sentence.
-// console.log(xxxxx);
-
-// Harry said that was so mean of Teo to do Ken dirty like that. Make Teo's vision spin 20 times FOR LOOP.
-// console.log(xxxxx);
+// Ken has a headache today and he said the room has been spinning like crazy. 
+// Make Ken's room spin 10 times using FOR LOOP. 
+// Make them print a sentence.
+for(let i = 0;i<11;i++){
+  console.log(`${i}: Will the spinning ever end?!`);
+}
+// Harry said that was so mean of Teo to do Ken dirty like that.
+// Make Teo's vision spin 20 times FOR LOOP.
+let roomSpinCount=0;
+for(let i = 0;i<20;i++){
+  roomSpinCount++;
+  console.log(roomSpinCount);
+}
 
 // But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
-// console.log(xxxxx);
-
+roomSpinCount=0;
+while (roomSpinCount<20) {
+  roomSpinCount++;
+  console.log(`${roomSpinCount}: I'm sorry!`);
+}
 // For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :) 
-// console.log(xxxxx);
 
 // To The Left! To The Left! Everything I want in the console to the left. Print thing1, thing2, thing 3 using (FOR IN LOOP)
 const whateverQueenBeySaid = {
@@ -199,20 +208,38 @@ const whateverQueenBeySaid = {
   thing2: 'clothes',
   thing3: 'gaming console'
 }
-// console.log(xxxxx);
+
+for(const thing in whateverQueenBeySaid){
+  console.log(thing);
+}
 
 // Using (FOR IN LOOP), print the indexes of the array.
+/* today I learned that for...in loops return the key/index of the object/array it is iterating over */
 const lana = ['l', 'a', 'n', 'a']
-// console.log(xxxxx);
+
+for(const index in lana){
+  console.log(index)
+}
 
 // USE (FOR OF LOOP)!
 const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
-// console.log(xxxxx);
+
+for(const index of tia){
+  console.log(tia.indexOf(index));
+}
 
 // Look into forEach() loop, it accepts a callback aka a function inside a function. 
-// Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas. Inside the function, create a variable with the string "PS". Print their name in the console concatenated with the variable. 
+// Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas.
+// Inside the function, create a variable with the string "PS".
+// Print their name in the console concatenated with the variable. 
 const perscholas = ['Amira', 'Arely', 'Jonathan']
-// console.log(xxxxx);
+function printPS(arr){
+  const ps='PS'
+  perscholas.forEach((el)=>{
+    console.log(`${ps} ${el}`);
+  })
+}
+printPS(perscholas)
 
 // =================================================
 //                     ARRAYS
