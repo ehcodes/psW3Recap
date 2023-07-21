@@ -363,17 +363,18 @@ const donutShop =[
       [
         [
           ['flavor of the week']
-        ], ['ihatethis']
+        ], 
+        ['ihatethis']
       ]
     ]
   ]
 ]
 
 // Anthony wants applecrumble. Print please!
-// console.log(xxxxx);
+console.log(donutShop[1][0][1]);
 
 // Tosi wants ihatethis. :) Print!
-// console.log(xxxxx);
+console.log(donutShop[2][0][0][1][0]);
 
 // =================================================
 //                     IF/ELSE
